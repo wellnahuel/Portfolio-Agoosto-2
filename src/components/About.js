@@ -23,11 +23,11 @@ const About = () => {
 
   return <section className='section' id="about" ref={ref}>
     <div className="container mx-auto">
-      <div className='flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen'>
+      <div className='flex flex-col mb-[700px] gap-y-10 h-screen lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 lg:mt-[100px]'>
         {/* image */}
         <motion.div variants={fadeIn('right', 0.3)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.3 }} className=''>
           {/* right here the image is apply from the tailwind.config file */}
-          <img className="flex-1 bg-contain bg-no-repeat   h-[640px] mix-blend-lighten bg-top" src={image_about} alt="" />
+          <img className="flex-1 justify-center bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top" src={image_about} alt="" />
         </motion.div>
         {/* text */}
         <motion.div variants={fadeIn('left', 0.5)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.3 }}  className='flex-1'>

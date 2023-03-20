@@ -27,12 +27,12 @@ const Banner = () => {
           <motion.p variants={fadeIn('up', 0.5)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className="mb-8 max-w-lg mx-auto lg:mx-0">
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
           </motion.p>
-          <motion.div variants={fadeIn('up', 0.6)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0">
+          <motion.div variants={fadeIn('up', 0.6)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className="flex max-w-max gap-x-2 items-center mb-12 mx-auto lg:mx-0">
             <button className="btn btn-lg">Contactame</button>
             <a href="#" className="text-gradient btn-link"> Mi Portafolio</a>
           </motion.div>
           {/* socials */}
-          <div className="flex text-xl gap-x-6 max-w-max mx-auto lg:mx-0">
+          <motion.div variants={fadeIn('up', 0.6)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className="flex text-xl gap-x-6 max-w-max mx-auto lg:mx-0">
             <a href="#">
               <FaInstagram />
             </a>
@@ -42,13 +42,12 @@ const Banner = () => {
             <a href="#">
               <FaYoutube />
             </a>
-          </div>
+          </motion.div>
         </div>
         {/* image , rigth part */}
         <motion.div variants={fadeIn('down', 0.3)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className="hidden lg:flex flex-1 max-w-xs lg:max-w-[482px]">
           <img src={Image} alt="" />
         </motion.div>
-
       </div>
     </div>
   </section>;

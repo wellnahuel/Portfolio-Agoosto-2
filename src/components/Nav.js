@@ -15,16 +15,16 @@ const Nav = () => {
           <Link to="home" activeClass='active' smooth={true} spy={true} offset={-200} className="cursor-pointer w-16 h-16 flex items-center justify-center">
             <BiHomeAlt />
           </Link>
-          <Link to="about" activeClass='active' smooth={true} spy={true} className="cursor-pointer w-16 h-16 flex items-center justify-center">
+          <Link to="about" activeClass='active' smooth={true} spy={true} offset={150} className="cursor-pointer w-16 h-16 flex items-center justify-center">
             <BiUser />
           </Link>
-          <Link to="services" activeClass='active' smooth={true} spy={true} className="cursor-pointer w-16 h-16 flex items-center justify-center">
+          <Link to="services" activeClass='active' smooth={true} spy={true} offset={150} className="cursor-pointer w-16 h-16 flex items-center justify-center">
             <BsClipboardData />
           </Link>
-          <Link to="work" activeClass='active' smooth={true} spy={true} className="cursor-pointer w-16 h-16 flex items-center justify-center">
+          <Link to="work" activeClass='active' smooth={true} spy={true} offset={350} className="cursor-pointer w-16 h-16 flex items-center justify-center">
             <BsBriefcase />
           </Link>
-          <Link to="contact" activeClass='active' smooth={true} spy={true} className="cursor-pointer w-16 h-16 flex items-center justify-center">
+          <Link to="contact" activeClass='active' smooth={true} spy={true} offset={650} className="cursor-pointer w-16 h-16 flex items-center justify-center">
             <BsChatSquare />
           </Link>
         </div>
