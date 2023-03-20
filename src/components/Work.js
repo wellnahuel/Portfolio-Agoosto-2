@@ -7,7 +7,7 @@ import { fadeIn } from "../variants"
 import Img1 from "../assets/1_crop_resize.png"
 import Img2 from "../assets/2_crop.png"
 import Img3 from "../assets/3_crop_resize.png"
-import Img4 from "../assets/4_resize.png"
+//import Img4 from "../assets/4_resize.png"
 
 const Work = () => {
   return (
