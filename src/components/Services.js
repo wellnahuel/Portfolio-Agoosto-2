@@ -31,7 +31,7 @@ const services = [
 const Services = () => {
   return <section className='section' id="services">
     <div className='container mx-auto'>
-      <div className='flex flex-col lg:flex-row lg:mt-[500px]'>
+      <div className='flex flex-col lg:flex-row lg:mt-[200px]'>
         {/* text and image */}
         <motion.div variants={fadeIn('right', 0.5)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.3 }} className='flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blends-lighten mb-12 lg:mb-0'>
           <h2 className='h2 text-accent mb-6'>Que es lo que hago?</h2>

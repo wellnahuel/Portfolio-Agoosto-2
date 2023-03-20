@@ -23,7 +23,7 @@ const About = () => {
 
   return <section className='section' id="about" ref={ref}>
     <div className="container mx-auto">
-      <div className='flex flex-col mb-[700px] gap-y-10 h-screen lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 lg:mt-[100px]'>
+      <div className='flex flex-col mb-[700px] gap-y-10 h-screen lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 lg:mt-[600px]'>
         {/* image */}
         <motion.div variants={fadeIn('right', 0.3)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.3 }} className=''>
           {/* right here the image is apply from the tailwind.config file */}
@@ -40,7 +40,7 @@ const About = () => {
           <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
             <div>
               <div className=' text-[40px] font-tertiary text-gradient mb-2'>
-                { inView ? <CountUp start={0} end={12} duration={3} /> : null }
+                { inView ? <CountUp start={0} end={13} duration={3} /> : null }
               </div>
               <div className='font-primary text-sm tracking-[2px]'>
                 Años de <br />

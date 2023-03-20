@@ -10,7 +10,7 @@ const Contact = () => {
   return (
     <div className='py-16 lg:section' id="contact">
       <div className='container mx-auto'>
-        <div className='flex flex-col lg:flex-row lg:mt-[1300px]'>
+        <div className='flex flex-col lg:flex-row lg:mt-[750px]'>
           {/* text */}
           <motion.div variants={fadeIn('rigth', 0.3)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.3 }} className='flex-1 flex justify-start items-center'>
             <div >

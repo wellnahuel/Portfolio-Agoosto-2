@@ -13,7 +13,7 @@ const Work = () => {
   return (
     <section className='section' id="work">
       <div className='container mx-auto'>
-        <div className='flex flex-col gap-x-10 lg:flex-row lg:mt-[950px]'>
+        <div className='flex flex-col gap-x-10 lg:flex-row lg:mt-[550px]'>
           <motion.div variants={fadeIn('rigth', 0.3)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.3 }} className='flex-1 flex flex-col gap-y-12 mb-10 lg:mb-10'> {/* Titulo + descripcion + boton + 1er card */}
             {/* text */}
             <div>
