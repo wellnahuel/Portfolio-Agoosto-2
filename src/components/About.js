@@ -9,11 +9,14 @@ import { motion } from "framer-motion"
 //import variant
 import { fadeIn } from "../variants"
 
+//import image
+import image_about from "../assets/about.png"
+
 
 
 const About = () => {
 
-  /* esto es para que react intersection observer funcione */
+  /* esto es para que react intersection observer funcione , seria lo de los contadores*/
   const [ref, inView] = useInView({
     threshold: 0.5,
   });
@@ -22,8 +25,9 @@ const About = () => {
     <div className="container mx-auto">
       <div className='flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen'>
         {/* image */}
-        <motion.div variants={fadeIn('right', 0.3)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.3 }} className='flex flex-1 bg-about bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top'>
+        <motion.div variants={fadeIn('right', 0.3)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.3 }} className=''>
           {/* right here the image is apply from the tailwind.config file */}
+          <img className="flex-1 bg-contain bg-no-repeat   h-[640px] mix-blend-lighten bg-top" src={image_about} alt="" />
         </motion.div>
         {/* text */}
         <motion.div variants={fadeIn('left', 0.5)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.3 }}  className='flex-1'>
@@ -94,3 +98,5 @@ export default About;
 //The flex-basis CSS property sets the initial main size of a flex item. It sets the size of the content box unless otherwise set with box-sizing.
 
 //mix-blend-mode The mix-blend-mode CSS property sets how an element's content should blend with the content of the element's parent and the element's background.
+
+// esto estaba dentro de la className de la imagen bg-about bg-contain bg-no-repeat
