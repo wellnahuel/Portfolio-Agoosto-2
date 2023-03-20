@@ -23,57 +23,63 @@ const About = () => {
 
   return <section className='section' id="about" ref={ref}>
     <div className="container mx-auto">
-      <div className='flex flex-col mb-[700px] gap-y-10 h-screen lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 lg:mt-[600px]'>
+      <div className='flex flex-col mb-[700px] gap-y-10 h-screen lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 lg:mt-[700px]'>
         {/* image */}
-        <motion.div variants={fadeIn('right', 0.3)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.3 }} className=''>
+        <motion.div variants={fadeIn('right', 0.3)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.3 }} className="flex-1  bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top">
           {/* right here the image is apply from the tailwind.config file */}
-          <img className="flex-1 justify-center bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top" src={image_about} alt="" />
+          <img src={image_about} alt="" />
         </motion.div>
         {/* text */}
-        <motion.div variants={fadeIn('left', 0.5)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.3 }}  className='flex-1'>
+        <motion.div variants={fadeIn('left', 0.5)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.3 }} className='flex-1'>
           <h2 className='h2 text-accent'>Sobre mi</h2>
           <h3 className='h3 mb-4'>Soy un diseñador grafico freelance con más de 10 años de experiencia.</h3>
           <p className='mb-6'>
             Lorem ipsum d Lorem ipsum dLorem ipsum dLorem ipsum dLorem ipsum dLorem ipsum dLorem ipsum dLorem ipsum dLorem ipsum dLorem ipsum dLorem ipsum dLorem ipsum d
           </p>
           {/* stats */}
-          <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
+          <div className='gap-x-6 lg:flex-row lg:gap-x-10 mb-12'>
             <div>
-              <div className=' text-[40px] font-tertiary text-gradient mb-2'>
-                { inView ? <CountUp start={0} end={13} duration={3} /> : null }
-              </div>
-              <div className='font-primary text-sm tracking-[2px]'>
-                Años de <br />
-                Experiencia
+              <div className='flex '>
+                <div className='flex flex-row gap-x-16  lg:gap-x-80'>
+                  <div className='flex flex-col'>
+                    <div className=' text-[40px] font-tertiary text-gradient mb-2'>
+                      {/*  { inView ? <CountUp start={0} end={13} duration={3} /> : null } */}10
+                    </div>
+                    <div className='font-primary text-[12px] tracking-[2px]'>
+                      Años de <br />
+                      Experiencia
+                    </div>
+                  </div>
+                  <div className='flex flex-col'>
+                    <div className=' text-[40px] font-tertiary text-gradient mb-2'>
+                      {/* { inView ? <CountUp start={0} end={100} duration={3} /> : null } */}
+                      +100
+                    </div>
+                    <div className='font-primary text-[12px] tracking-[2px]'>
+                      Proyectos <br />
+                      Completados
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div>
+            <div className='grid mt-3 justify-items-center'>
               <div className=' text-[40px] font-tertiary text-gradient mb-2'>
-                { inView ? <CountUp start={0} end={100} duration={3} /> : null }
-                +
+                {/*  { inView ? <CountUp start={0} end={1000} duration={3} /> : null } */} +500
               </div>
-              <div className='font-primary text-sm tracking-[2px]'>
-                Proyectos <br />
-                Completados
-              </div>
-            </div>
-            <div>
-              <div className=' text-[40px] font-tertiary text-gradient mb-2'>
-                { inView ? <CountUp start={0} end={1000} duration={3} /> : null }
-              </div>
-              <div className='font-primary text-sm tracking-[2px]'>
+              <div className='font-primary text-[12px] tracking-[2px]'>
                 Clientes <br />
                 Satisfechos
               </div>
             </div>
           </div>
-          <div className='flex gap-x-8 items-center'>
+          <div className='flex gap-x-4 items-center'>
             <button className='btn btn-lg'>Contáctame</button>
             <a href="#" className='text-gradient btn-link'>
               Mi Portafolio
             </a>
           </div>
-          
+
         </motion.div>
       </div>
 
