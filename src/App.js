@@ -20,7 +20,7 @@ const App = () => {
       <Work />
       <Contact />
       <Footer />
-      <div className='h-[150px] lg:h-[130px]'></div>
+      <div className='h-[150px] lg:h-[170px]'></div>
     </div>
   );
 };
