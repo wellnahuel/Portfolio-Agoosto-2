@@ -25,21 +25,21 @@ const Banner = () => {
             </span>
           </motion.div>
           <motion.p variants={fadeIn('up', 0.5)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className="mb-8 max-w-lg mx-auto lg:mx-0">
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          “Hermosos accidentes pueden ocurrir, pero el accidente no es la base de la excelencia en el diseño. Descubrimiento con propósito, seguido de una conceptualización centrada, además de una hábil ejecución son la base de la excelencia en el diseño.”          
           </motion.p>
           <motion.div variants={fadeIn('up', 0.6)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className="flex max-w-max gap-x-2 items-center mb-12 mx-auto lg:mx-0">
             <button className="btn btn-lg">Contactame</button>
-            <a href="#" className="text-gradient btn-link"> Mi Portafolio</a>
+            <a href="www.google.com" className="text-gradient btn-link"> Mi Portafolio</a>
           </motion.div>
           {/* socials */}
           <motion.div variants={fadeIn('up', 0.6)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.7 }} className="flex text-xl gap-x-6 max-w-max mx-auto lg:mx-0">
-            <a href="#">
+            <a href="https://www.instagram.com/agoosto/?hl=es">
               <FaInstagram />
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com/agoosto/?hl=es">
               <FaLinkedin />
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com/agoosto/?hl=es">
               <FaYoutube />
             </a>
           </motion.div>

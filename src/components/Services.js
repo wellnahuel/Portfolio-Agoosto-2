@@ -11,32 +11,32 @@ import { fadeIn } from "../variants"
 
 const services = [
   {
-    name: "Creador de branding",
-    description: "Lorem dolor sit amet con minim ven minim veniam ut lab. Trerteproeproeporperpo",
-  },
-  {
-    name: "Contenido Multimedia",
-    description: "Lorem dolor sit amet con minim ven minim veniam ut lab. Trerteproeproeporperpo"
+    name: "Diseñador de branding",
+    description: "Gestión inteligente, estratégica y creativa de todos aquellos elementos diferenciadores de la identidad de una marca",
   },
   {
     name: "Arte publicitario",
-    description: "Lorem dolor sit amet con minim ven minim veniam ut lab. Trerteproeproeporperpo"
+    description: "La publicidad es básicamente persuasión, y la persuasión no es una ciencia, sino un arte"
+  },
+  {
+    name: "Community Manager",
+    description: "Las claves para un marketing exitoso: enfoque, posicionamiento y diferenciación"
   },
   {
     name: "Diseño de producto",
-    description: "Lorem dolor sit amet con minim ven minim veniam ut lab. Trerteproeproeporperpo"
+    description: "Diseñar un producto es diseñar una relación"
   },
 ]
 
 const Services = () => {
   return <section className='section' id="services">
     <div className='container mx-auto'>
-      <div className='flex flex-col lg:flex-row lg:mt-[200px]'>
+      <div className='flex flex-col lg:flex-row mt-[250px] lg:mt-[300px]'>
         {/* text and image */}
         <motion.div variants={fadeIn('right', 0.5)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.3 }} className='flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blends-lighten mb-12 lg:mb-0'>
           <h2 className='h2 text-accent mb-6'>Que es lo que hago?</h2>
-          <h3 className='h3  max-w-[455px] mb-16'>
-            Soy un diseñador grafico freelance con más de 10 años de experiencia.
+          <h3 className='h3 max-w-[455px] text-[18px] mb-16'>
+            "Una marca no es más lo que el consumidor piensa que es, sino lo que les cuenta a otros que es"
           </h3>
           <button className='btn btn-sm'>Mis proyectos</button>
         </motion.div>

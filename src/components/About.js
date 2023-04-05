@@ -10,7 +10,7 @@ import { motion } from "framer-motion"
 import { fadeIn } from "../variants"
 
 //import image
-import image_about from "../assets/about.png"
+import image_about from "../assets/AGOOSTO.png"
 
 
 
@@ -34,7 +34,9 @@ const About = () => {
           <h2 className='h2 text-accent'>Sobre mi</h2>
           <h3 className='h3 mb-4'>Soy un diseñador grafico freelance con más de 10 años de experiencia.</h3>
           <p className='mb-6'>
-            Lorem ipsum d Lorem ipsum dLorem ipsum dLorem ipsum dLorem ipsum dLorem ipsum dLorem ipsum dLorem ipsum dLorem ipsum dLorem ipsum dLorem ipsum dLorem ipsum d
+            Me apasiona crear diseños visualmente impactantes que ayuden a las marcas a crecer. Tengo experiencia como diseñador gráfico autónomo y en equipo, y he trabajado en una larga lista de proyectos de diseño impreso, interactivo y digital.
+            <br/>
+            Me encanta colaborar con clientes y colegas, y me entusiasma ofrecer diseños que ayuden captar clientes y hacer crecer su mercado objetivo y alcance.
           </p>
           {/* stats */}
           <div className='gap-x-6 lg:flex-row lg:gap-x-10 mb-12'>
